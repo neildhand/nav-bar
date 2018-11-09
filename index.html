@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Neil Dhand Visa Nav</title>
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            display: block;
+            font-family: 'open-sans',sans-serif,Tahoma;
+        }
+        header {
+            border-width: 1px 0;
+            background: linear-gradient(45deg,#1a1e5a 0,#122d98 100%);
+            position: relative;
+            height: 80px;
+        }
+        .nav-visa {
+            position: relative;
+            margin-bottom: 0;
+            border: 1px solid transparent;
+            height: 100%;
+        }
+        .nav-link {
+            margin-left: 0;
+            margin-top: .5rem;
+        }        
+        .nav-visa .visa-logo {
+            height: 25px;
+            padding-top: 1rem;
+        }
+        .nav-visa .nav-link {
+            margin-top: 1rem;
+            padding: 1.2rem 1.5rem 0;
+        }
+        .nav-items ul {
+            list-style-type: none;
+            position: relative;
+            bottom: 21px;
+            left: 10px;
+            padding: 0;
+            font-size: 1.1rem;
+        }
+        .nav-items li {
+            display: inline;
+        }
+        .nav-items li a {
+            text-decoration: none;
+            color: rgba(255,255,255,0.85);
+            padding-right: .9rem;
+            padding-left: .9rem;
+            font-family: 'open-sans',sans-serif,Tahoma;
+        }
+        .nav-visa .nav-img {
+            margin-top: 8px;
+        }
+        .nav-visa .nav-img img {
+            height: 3.6rem;
+            position: relative;
+            left: 115px;
+            float: left;
+        }
+        .nav-visa .nav-items {
+            position: relative;
+            left: 190px;
+            bottom: 6px;
+        }
+        .nav-items li a:hover {
+            text-decoration: none;
+            color: #f7b600;
+            padding-right: .9rem;
+            padding-left: .9rem;
+        }
+        .under-nav {
+            width: 100%;
+            height: 4px;
+            background-color: #f7b600;
+        }
+        .arrow-up {
+	        width: 0; 
+	        height: 0; 
+	        border-left: 8px solid transparent;  /* left arrow slant */
+	        border-right: 8px solid transparent; /* right arrow slant */
+	        border-bottom: 8px solid #f7b600; /* bottom, add background color here */
+	        font-size: 0;
+	        line-height: 0;
+            position: relative;
+
+        }
+        #search {
+            font-size: 25px;
+            padding: 0 20px;
+        }
+        .vert-line {
+            border-left: 1px solid rgba(255,255,255,0.85);
+            height: 4rem;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header> 
+        <nav class="nav-visa">    
+            <div class="nav-img">
+                <a href="/" class="nav-link">
+                    <img src="./logo.png" alt="Visa Logo" class="visa-logo">
+                </a>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-item"> <a id="pay" href="">Pay With Visa</a> </li>
+                    <li class="nav-item" id="partner"> <a href="">Partner With Us</a> </li>
+                    <li class="nav-item" id="run"> <a href="">Run Your Business</a> </li>
+                    <li class="nav-item"  id="travel"> <a href="">Travel With Visa</a> </li>
+                    <li class="nav-item" id="learn"> <a href="">Learn About Visa</a> </li>
+                    <span id="slide" class="vert-line"></span>
+                    <li class="search" id="search">
+                        <a href=""> <i class="fa fa-search" style="color:#f7b600"></i> </a> 
+                    </li>
+                </ul>
+            </div>            
+        </nav>
+        <div style="background: linear-gradient(45deg,#1a1e5a 0,#122d98 100%)">
+            <div id="arrow" class="arrow-up"></div>
+            <div class="under-nav"></div>
+        </div>
+    </header>
+    
+    <script>
+        $('#pay').click(function(){
+            $('#arrow').animate({display: 'toggle', left: '+=250px'});
+        });
+    </script>
+    
+</body>
+
+</html>
